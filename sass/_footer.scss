@@ -1,0 +1,57 @@
+footer {
+  width: 100%;
+  background-image: url('../img/pictures/canyon-1740973_1920.jpg');
+  background-position: cover;
+  min-height: 80vh;
+  .info {
+    font-size: .9rem;
+  }
+}
+.footer-content-container {
+  margin-top: 15%;
+  h5 {
+    margin-bottom: 20px;
+  }
+  .mail-envelope-adress {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    svg {
+      font-size: 16px;
+    }
+    .bi-envelope-fill {
+      margin-right: 20px;
+    }
+  }
+  
+  a {
+    margin-right: 20px;
+  }
+  .info {
+    margin-top: 20px;
+  }
+  .newsletter-note {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+  }
+}
+
+.second-footer {
+  position: relative;
+  background-color: black;
+  font-size: .9rem;
+  .fa-arrow-circle-up {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: $primary;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      color: white;
+    }
+  }
+}

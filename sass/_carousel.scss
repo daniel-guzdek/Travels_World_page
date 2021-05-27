@@ -1,0 +1,14 @@
+.carousel {
+  position: relative;
+  .carousel-indicators {
+    position: absolute;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100vw;
+    .carousel-caption {
+      position: absolute;
+    }
+  }
+}
+

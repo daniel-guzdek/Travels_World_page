@@ -1,0 +1,106 @@
+.about__content {
+  background-image: url('../img/pictures/about/about-picture.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+  margin-top: $spacing-section-top;
+  .about-wrap {
+    padding: 30px 50px;
+    background-color: rgba($color: #000000, $alpha: .5);
+    min-height: 100vh;
+    @media (max-width: 480px) {
+      padding: 20px 10px;
+    }
+    .about__content--title {
+      margin-top: 40px;
+      font-size: $title-main-size;
+      text-align: center;
+      @media (max-width: 768px) {
+        font-size: 45px;
+        margin-top: 30px;
+      }
+      @media (max-width: 480px) {
+        font-size: $title-main-size-media-width-460px;
+      }
+    }
+    hr {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: white;
+      height: 3px;
+    }
+    .about__content--subtitle {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+    .about__content-stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 30px;
+      text-align: center; 
+      @media (max-width: 768px) {
+        font-size: 20px;
+      } 
+      .fa-star {
+        margin: 15px;
+      }       
+    }
+    .about__content--description {
+      font-size: 20px;
+      text-transform: normal;
+      letter-spacing: 1.6px;
+      padding-top: 40px;
+      padding-bottom: 25px;
+      margin-bottom: 40px;
+      line-height: 200%;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        padding-top: 25px;
+      }
+    }
+  }
+}
+
+@media (orientation:landscape) {
+  .about__content--description {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (orientation:portrait) {
+  .about-wrap {
+      margin-left: 5vw;
+      margin-right: 5vw;
+  }
+}
+@media (min-width:768px) {
+  .about__content--title {
+      font-size: 50px;
+      padding-bottom: 35px;
+      padding-top: 30px;
+  }
+  .about__content--description {
+      font-size: 20px;
+      padding-bottom: 35px;
+  }
+}
+@media (min-width:1024px) {
+  .about__content--title {
+      font-size: 70px;
+      padding-bottom: 45px;
+  }
+  .about__content--description {
+      font-size: 20px;
+      padding-bottom: 45px;
+  }
+}

@@ -1,0 +1,50 @@
+.travel--directions {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  .travel--directions-title {
+    text-align: center;
+    margin-bottom: $title-main-margin-bottom;
+    font-size: $title-main-size;
+  }
+  hr {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .travel--directions-subtitle {
+    text-align: center;
+    margin: $subtitle-main-margin-bottom auto;
+  }
+  .row.card--direction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    .card {
+      min-height: 400px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .card--image-container {
+        height: 40%;
+        overflow: hidden;
+        .card-img-top {
+          height: 100%;
+        }
+      }
+      .card-body {
+        .card-title {
+          height: 10%;
+        }
+        .card-text {
+          height: 55%;
+        }
+        .btn {
+          height: 20%;
+        }
+      }
+    }  
+  }
+}

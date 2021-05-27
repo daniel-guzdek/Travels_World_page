@@ -1,0 +1,163 @@
+.blog-wrapper {
+  margin-top: $spacing-section-top;
+  margin-bottom: $spacing-section-bottom;
+  .blog--title {
+    text-align: center;
+    margin-bottom: $title-main-margin-bottom;
+    color: black;
+    font-size: $title-main-size;
+    @media (max-width: 480px) {
+      font-size: $title-main-size-media-width-460px;
+    }
+  }
+  hr {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .blog--subtitle {
+    margin: $subtitle-main-margin-top auto;
+    text-align: center;
+  }
+
+  // Card's container
+  .blog__all-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: $spacing-section-top * 1.5;
+    @media (max-width: 1024px) {
+      margin-top: $spacing-section-top;
+    }
+
+    // single Card
+    .blog__card {
+      flex-basis: 40%;
+      min-height: 400px;
+      margin-bottom: $spacing-section-bottom * 2;
+      @media (max-width: 768px) {
+        flex-basis: 90%;
+      }
+      .blog__card-image-container {
+        margin-top: 50px;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        border-radius: 7px;
+        box-shadow:  0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+        .blog__card-picture {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .blog__card-image-container--I {
+        background-image: url('../img/pictures/blogs/blog-picture_tsunami-_1280.jpg');
+        background-size: cover;
+      }
+      .blog__card-image-container--II {
+        background-image: url('../img/pictures/blogs/blog-picture_victoria-_1280.jpg');
+        background-size: cover;
+      }
+      .blog__card-image-container--III {
+        background-image: url('../img/pictures/blogs/blog-picture_varanasi.JPG');
+        background-size: cover;
+      }
+      .blog__card-image-container--IV {
+        background-image: url('../img/pictures/blogs/blog-picture_explosion-_1280.jpg');
+        background-size: cover;
+      }
+      .blog__card-image-container--V {
+        background-image: url('../img/pictures/blogs/blog-picture_maasai-tribe-_1280.jpg');
+        background-size: cover;
+      }
+      .blog__card-image-container--VI {
+        background-image: url('../img/pictures/blogs/blog-picture_rough-horn-_1920.jpg');
+        background-size: cover;
+      }
+
+      // Card's body
+      .blog__card-body {
+        padding: 10px;
+        height: 60%;
+        padding-bottom: 40px;
+        .blog__card-title {
+          height: 20%;
+          font-size: 26px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          @media (max-width: 1024px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          @media (max-width: 480px) {
+            font-size: 16px;
+            margin-bottom: 14px;
+          }
+        }
+        .blog__card-text {
+          min-height: 50%;
+          margin-bottom: 20px;
+          font-size: 17px;
+          color: rgb(128, 125, 125);
+          letter-spacing: 1.3px;
+          line-height: 170%;
+          overflow: hidden;
+          @media (max-width: 1024px) {
+            font-size: 15px;
+            margin: 15px auto;
+            padding: 10px;
+          }
+          @media (max-width: 480px) {
+            font-size: 12px;
+          }
+          .blog__card-link {
+            margin-left: 10px;
+          }
+        }
+        .blog__card-author-container {
+          display: flex;
+          align-items: center;
+          @media (max-width: 480px) {
+            margin-top: 15px;
+          }
+          .author__image-container {
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            padding-left: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            .author__image-picture {
+              width: 100%;
+            }
+          }
+          .author__image-container--I {
+            background-image: url('../img/pictures/team/people-875597_1280.jpg');
+            background-size: cover;  
+          }
+          .author__image-container--II {
+            background-image: url('../img/pictures/team/camera-5149838_1280.jpg');
+            background-size: cover;  
+          }
+          .author__image-container--III {
+            background-image: url('../img/pictures/team/adult-1867618_1280.jpg');
+            background-size: cover;  
+          }
+          .author__image-container--IV {
+            background-image: url('../img/pictures/team/photographer-865295_1280.jpg');
+            background-size: cover;  
+          }
+          .author__image-container--V {
+            background-image: url('../img/pictures/team/photographer-1150052_1280.jpg');
+            background-size: cover;  
+          }
+          .author__image-container--VI {
+            background-image: url('../img/pictures/team/model-4255068_1280.jpg');
+            background-size: cover;  
+          }
+        }
+      }
+    }
+  }
+}

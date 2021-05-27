@@ -1,0 +1,104 @@
+.hero-content {
+  min-height: 100vh;
+  max-height: 200vh;
+  width: 100%;
+  background-image: url('../img/pictures/hero/hero-mountain.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+    min-height: 50vh;
+    max-height: 100vh;
+  }
+  @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    min-height: 50vh;
+    max-height: 100vh;
+  }
+  .hero--bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .4);
+    @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+    min-height: 50vh;
+    max-height: 100vh;
+    }
+    @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    min-height: 50vh;
+    max-height: 100vh;
+    }
+    .hero-titles-forms-container {
+      width: 80%;
+      .hero__title {
+        font-size: $title-main-size;
+        text-align: center;
+        margin-bottom: $title-main-margin-bottom;
+        color: white;
+        text-transform: normal;
+        @media (max-width: 1024px) {
+          font-size: 45px;
+        }
+        @media (max-width: 768px) {
+          font-size: 35px;
+          margin-bottom: 40px;
+        }
+      }
+      .hero__invitation{
+        text-align: center;
+        margin-top: $subtitle-main-margin-top;
+        margin-bottom: $subtitle-main-margin-bottom;
+        color: white;
+        @media (max-width: 1024px) {
+          font-size: 22px;
+        }
+        @media (max-width: 768px) {
+          font-size: 17px;
+          margin-bottom: 30px;
+        }
+      }
+      .form__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        margin-top: 70px;
+        .form__input-container {
+          color: white;
+          padding: 0 20px 20px 20px;
+        }
+        input {
+          background-color: transparent;
+          border: 1px solid rgba($color: #fff, $alpha: 0.6);
+          border-radius: 20px;
+          padding: 10px 20px;
+          color: white;
+          box-shadow: none;
+          font-family: 'Montserrat';
+        }
+        input:focus, input:active {
+          border: 1px solid white;
+          transition: 0.3s;
+        }
+        ::placeholder {
+          color: white;
+        }
+        .input-button {
+          width: 200px;
+          padding: 10px 20px;
+          height: 40px;
+          background-color: darken($secondary, 10%);
+          border: none;
+          transition: .3s;
+          &:hover {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
