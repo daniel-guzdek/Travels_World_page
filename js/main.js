@@ -3,6 +3,12 @@ const ulContainer = document.querySelector('.menu__item-list');
 const activeClass = document.querySelector('.navigation.active');
 const burger = document.querySelector('.burger');
 
+// handle loader
+window.addEventListener('load', () => {
+  const preload = document.querySelector('.loader');
+  preload.classList.add('loader-finish');
+})
+
 //BURGER - handle for @media (max-width: 768px)
 const navSlide = ()=> {
   const burger = document.querySelector('.burger');
